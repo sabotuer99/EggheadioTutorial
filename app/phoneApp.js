@@ -18,12 +18,18 @@ app.directive("phone", function () {
 
 app.controller("AppCtrl", function ($scope) {
     $scope.leaveVoicemail = function (number, message) {
-        alert("Number: " + number + " said:" + message)
-    }
+        alert("Number: " + number + " said:" + message);
+    };
 
     $scope.leaveVoicemailHome = function (number, message) {
-        alert("Home! Number: " + number + " said:" + message)
-    }
+        alert("Home! Number: " + number + " said:" + message);
+    };
+
+    this.sayHi = function () {
+        alert("hi");
+    };
+
+    return $scope.AppCtrl = this;
 })
 
 app.directive("phone", function () {
@@ -48,4 +54,12 @@ app.directive("phone", function () {
         }
     }
 });
+
+app.directive("panel", function() {
+    return {
+        restrict: "E",
+        transclude: true,
+        template: '<div class="panel"> <div ng-transclude></div>This is a panel component</div> '
+    }
+})
 
