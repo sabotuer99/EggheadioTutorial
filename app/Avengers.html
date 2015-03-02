@@ -16,10 +16,24 @@
 </head>
 <body>
 
-<div ng-app="myApp">
+<!--<div ng-app="avengersApp">
 
+    <div ng-controller="AvengersCtrl">
+        <input type="text" ng-model="search.$">
+        <table>
+            <tr ng-repeat="actor in avengers.cast | orderBy:'-name' | limitTo:5 |filter:search">
+                <td>{{actor.name | lowercase}}</td>
+                <td>{{actor.character | uppercase}}</td>
+            </tr>
+        </table>
 
+    </div>
 
+</div>-->
+
+<div ng-app="superheroApp">
+    <!--<superman></superman>-->
+    <div superman flash></div>
 </div>
 
 <script src="bower_components/angular/angular.js"></script>

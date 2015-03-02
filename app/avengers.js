@@ -77,3 +77,26 @@ function AvengersCtrl($scope, Avengers) {
     $scope.avengers = Avengers;
 }
 
+var superheroApp = angular.module('superheroApp', [])
+
+superheroApp.directive('superman', function () {
+    return {
+        /*restrict: "E",
+        template: "<div>Here I am to save the day</div>"*/
+        restrict: "A",
+        link: function () {
+            alert("I'm working stronger");
+        }
+    }
+})
+
+superheroApp.directive('flash', function () {
+    return {
+        /*restrict: "E",
+         template: "<div>Here I am to save the day</div>"*/
+        restrict: "A",
+        link: function () {
+            alert("I'm working faster");
+        }
+    }
+})
