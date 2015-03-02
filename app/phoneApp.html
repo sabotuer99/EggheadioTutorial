@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Egghead.io Angular JS tutorial</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+<body ng-app="phoneApp">
+<br/>
+
+<div ng-controller="AppCtrl">
+
+    <phone number="555-1234" network="network" make-call="leaveVoicemail(number,message)"></phone>
+    <phone number="867-5309" network="network" make-call="leaveVoicemail(number,message)"></phone>
+    <phone number="911" network="network" make-call="leaveVoicemailHome(number,message)"></phone>
+
+</div>
+
+
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script type="text/javascript" src="phoneApp.js"></script>
+</body>
+</html>
