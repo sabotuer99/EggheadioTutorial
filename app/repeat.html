@@ -20,10 +20,15 @@
 Anything in here
 <div ng-repeat-end="">Also in here with binding {{thing}}</div>
 
+<button ng-click="app.toggle=!app.toggle">Toggle Animation</button>
+<div class="toggle" ng-if="app.toggle">Some content here</div>
+
+
 
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="app.js"></script>
 <script src="view1/view1.js"></script>
 <script src="view2/view2.js"></script>
