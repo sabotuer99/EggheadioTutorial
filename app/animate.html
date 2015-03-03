@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Egghead.io Angular JS tutorial</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">-->
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">-->
+    <!--<link rel="stylesheet" href="app.css">-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+<body ng-app="app" ng-controller="AppCtrl as app">
+
+<button id="my-button" class="button" ng-click="app.fadeIt()">Click to fade</button>
+<br/>
+<div class="panel" hide-me="app.isHidden">Fade me</div>
+<div class="panel" hide-me="app.isHidden">Fade me</div>
+<div class="panel" >Fade me</div>
+<div class="panel" hide-me="app.isHidden">Fade me</div>
+<div class="panel" hide-me="app.isHidden">Fade me</div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/greensock/src/uncompressed/TweenMax.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script type="text/javascript" src="animate.js"></script>
+</body>
+</html>
